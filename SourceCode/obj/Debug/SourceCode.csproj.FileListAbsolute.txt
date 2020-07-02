@@ -31,3 +31,36 @@ E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\
 E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.exe
 E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.pdb
 E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.Form1.resources
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\SourceCode.exe.config
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\SourceCode.exe
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\SourceCode.pdb
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\Npgsql.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Buffers.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Memory.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Text.Json.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Threading.Channels.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.ValueTuple.dll
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\Npgsql.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Buffers.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Memory.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Text.Json.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Threading.Channels.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\bin\Debug\System.ValueTuple.xml
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.csprojAssemblyReference.cache
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.exe.config
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.Properties.Resources.resources
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.Form1.resources
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.csproj.GenerateResource.cache
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.csproj.CopyComplete
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.exe
+C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.pdb

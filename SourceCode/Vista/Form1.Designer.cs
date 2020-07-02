@@ -36,7 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.picBtnArrow = new System.Windows.Forms.PictureBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.tlpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.picBtnArrow)).BeginInit();
@@ -56,7 +56,7 @@
             this.tlpLogin.Controls.Add(this.label2, 0, 1);
             this.tlpLogin.Controls.Add(this.label3, 0, 2);
             this.tlpLogin.Controls.Add(this.picBtnArrow, 2, 3);
-            this.tlpLogin.Controls.Add(this.txtName, 1, 1);
+            this.tlpLogin.Controls.Add(this.txtId, 1, 1);
             this.tlpLogin.Controls.Add(this.txtPassword, 1, 2);
             this.tlpLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpLogin.Location = new System.Drawing.Point(0, 0);
@@ -92,7 +92,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(400, 147);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre: ";
+            this.label2.Text = "Carnet:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -119,13 +119,13 @@
             this.picBtnArrow.TabStop = false;
             this.picBtnArrow.Click += new System.EventHandler(this.picBtnArrow_Click);
             // 
-            // txtName
+            // txtId
             // 
-            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtName.Location = new System.Drawing.Point(505, 209);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(207, 23);
-            this.txtName.TabIndex = 5;
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Location = new System.Drawing.Point(505, 209);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(207, 23);
+            this.txtId.TabIndex = 5;
             // 
             // txtPassword
             // 
@@ -135,6 +135,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(208, 23);
             this.txtPassword.TabIndex = 6;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // Form1
             // 
@@ -162,7 +163,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox picBtnArrow;
+        private System.Windows.Forms.TextBox txtId;
     }
 }

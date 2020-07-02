@@ -8,7 +8,7 @@ namespace SourceCode.Controlador
         private static string host = "localhost",
             database = "ParcialFinalPOO",
             userID = "postgres",
-            pasword = "uca";
+            pasword = "1234";
         
         private static string sConecction =
             $"Server={host};Port=5432;User Id={userID};Password={pasword};Database={database};";
@@ -38,6 +38,6 @@ namespace SourceCode.Controlador
             command.ExecuteNonQuery(); 
                 
             connection.Close();
-        }
+        }    
     }
 }

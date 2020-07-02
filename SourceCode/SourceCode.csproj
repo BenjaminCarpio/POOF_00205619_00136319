@@ -140,9 +140,6 @@
         <None Include="App.config" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Recursos" />
-    </ItemGroup>
-    <ItemGroup>
       <Content Include="Resources\Background_login.jpeg" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

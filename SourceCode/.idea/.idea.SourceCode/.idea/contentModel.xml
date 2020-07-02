@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Benjamin\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Benjamin\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SourceCode.-1282803401.00" t="ExcludeRecursive" />
-    <e p="E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode" t="IncludeRecursive">
+    <e p="C:\Users\Edu1\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Edu1\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SourceCode.-438504120.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Edu1\Desktop\ParcialFinalPOO\POOF_00205619_00136319\SourceCode" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controlador" t="Include">
@@ -28,7 +28,6 @@
         <e p="Settings.Designer.cs" t="Include" />
         <e p="Settings.settings" t="Include" />
       </e>
-      <e p="Recursos" t="Include" />
       <e p="Resources" t="Include">
         <e p="Background_login.jpeg" t="Include" />
       </e>

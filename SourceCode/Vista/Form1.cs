@@ -13,6 +13,7 @@ namespace SourceCode
 {
     public partial class Form1 : Form
     {
+        public static int userType;
         public Form1()
         {
             InitializeComponent();
@@ -20,11 +21,12 @@ namespace SourceCode
 
         private void picBtnArrow_Click(object sender, EventArgs e)
         {
-            string username = txtName.Text;
+            string username = txtId.Text;
             string password = txtPassword.Text;
+            
             //codigo xd
             
-                if (txtName.Text.Equals("") || txtPassword.Text.Equals(""))
+                if (txtId.Text.Equals("") || txtPassword.Text.Equals(""))
                 {
                     MessageBox.Show("No se permiten campos vacios" , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
@@ -32,25 +34,40 @@ namespace SourceCode
                 {
                     try
                     {
-                        string query = $"SELECT nombre, contrasenia FROM USUARIO WHERE username = '{txtName.Text}' AND password = '{txtPassword.Text}'";
+                        string query = $"SELECT nombre, contrasenia, idDepartamento FROM USUARIO WHERE idUsuario = '{txtId.Text}' AND contrasenia = '{txtPassword.Text}'";
                         var cmd = ConnectionDB.ExecuteQuery(query);
 
 
                         DataTableReader dr;
                         dr = cmd.CreateDataReader();
-                        string user;
-                        bool adminUser;
-                    
+                        string user, type ="";
+                        bool adminUser = false, vigilant = false, employee = false;
+
+
                         if (dr.Read())
                         {
-                            //Obtener datos para ver si puede iniciar sesion xd
-
+                            user = dr.GetString(0);
+                            userType = dr.GetInt32(2);
+                            switch (userType)
+                            {
+                                case 1:
+                                    adminUser = true;
+                                    type = "Admin";
+                                    break;
+                                case 2:
+                                    vigilant = true;
+                                    type = "Vigilante";
+                                    break;
+                                case 3:
+                                    employee = true;
+                                    type = "Empleado";
+                                    break;
+                            }
                             //Poner tipo de usuario
-                            MessageBox.Show("Bienvenido" + "vigilante/blablabla llenar eso XD" + $"{txtName.Text}");
-                            
+                            MessageBox.Show("Bienvenido " + type + $" {user}");
+                            this.Hide();
                             Menu m = new Menu();
                             m.Show();
-                            this.Hide();
                         } else 
                             MessageBox.Show("Credenciales erroneas");
                     }
@@ -59,11 +76,12 @@ namespace SourceCode
                         MessageBox.Show("Ha ocurrido un error");
                     }
                 }
-            
-            
-            
-           
-            
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        { 
+            if(e.KeyCode == Keys.Enter)
+                picBtnArrow_Click((object)sender, (EventArgs)e);
         }
     }
 }
