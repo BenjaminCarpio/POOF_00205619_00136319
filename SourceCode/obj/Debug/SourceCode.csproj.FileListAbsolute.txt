@@ -30,3 +30,4 @@ E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\
 E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.csproj.CopyComplete
 E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.exe
 E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.pdb
+E:\Users\Benjamin\Desktop\Final Poo\POOF_00205619_00136319\SourceCode\obj\Debug\SourceCode.Form1.resources

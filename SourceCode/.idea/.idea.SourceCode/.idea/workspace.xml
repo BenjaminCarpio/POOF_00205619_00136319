@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cff07d-160c-44d3-9256-fd605623aabb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SourceCode.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursos/1593707339211.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursos/Background login.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recursos/Flechita.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.Properties.Resources.resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.Properties.Resources.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +53,8 @@
         <option value="$PROJECT_DIR$/Modelo/Registro.cs" />
         <option value="$PROJECT_DIR$/Modelo/Registry.cs" />
         <option value="$PROJECT_DIR$/Controlador/RegistryDAO.cs" />
-        <option value="$PROJECT_DIR$/Vista/Form1.cs" />
         <option value="$PROJECT_DIR$/Vista/Menu.Designer.cs" />
+        <option value="$PROJECT_DIR$/Vista/Form1.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1593702994795</updated>
       <workItem from="1593703007477" duration="2101000" />
-      <workItem from="1593707173533" duration="2454000" />
+      <workItem from="1593707173533" duration="2758000" />
+      <workItem from="1593711317819" duration="2493000" />
     </task>
     <servers />
   </component>
@@ -111,13 +118,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1593713812458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1593713812458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1593713812458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1593713812458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
     <state x="670" y="209" key="RiderGenerateDialog" timestamp="1593704727169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

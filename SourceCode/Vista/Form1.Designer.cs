@@ -47,11 +47,11 @@
             this.tlpLogin.BackColor = System.Drawing.Color.Transparent;
             this.tlpLogin.ColumnCount = 3;
             this.tlpLogin.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tlpLogin.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tlpLogin.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpLogin.Controls.Add(this.label1, 0, 0);
             this.tlpLogin.Controls.Add(this.label2, 0, 1);
             this.tlpLogin.Controls.Add(this.label3, 0, 2);
@@ -71,10 +71,14 @@
             // 
             // label1
             // 
+            this.tlpLogin.SetColumnSpan(this.label1, 2);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Forte", 36F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 147);
+            this.label1.Size = new System.Drawing.Size(806, 147);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre Empresa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,9 +86,11 @@
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Forte", 48F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(3, 147);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(332, 147);
+            this.label2.Size = new System.Drawing.Size(400, 147);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre: ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,9 +98,11 @@
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Forte", 48F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.Location = new System.Drawing.Point(3, 294);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(332, 147);
+            this.label3.Size = new System.Drawing.Size(400, 147);
             this.label3.TabIndex = 2;
             this.label3.Text = "Contraseña:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,9 +111,9 @@
             // 
             this.picBtnArrow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBtnArrow.Image = ((System.Drawing.Image) (resources.GetObject("picBtnArrow.Image")));
-            this.picBtnArrow.Location = new System.Drawing.Point(679, 444);
+            this.picBtnArrow.Location = new System.Drawing.Point(815, 444);
             this.picBtnArrow.Name = "picBtnArrow";
-            this.picBtnArrow.Size = new System.Drawing.Size(335, 141);
+            this.picBtnArrow.Size = new System.Drawing.Size(199, 141);
             this.picBtnArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBtnArrow.TabIndex = 4;
             this.picBtnArrow.TabStop = false;
@@ -114,7 +122,7 @@
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtName.Location = new System.Drawing.Point(403, 209);
+            this.txtName.Location = new System.Drawing.Point(505, 209);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(207, 23);
             this.txtName.TabIndex = 5;
@@ -122,8 +130,9 @@
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.Location = new System.Drawing.Point(403, 356);
+            this.txtPassword.Location = new System.Drawing.Point(505, 356);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(208, 23);
             this.txtPassword.TabIndex = 6;
             // 
