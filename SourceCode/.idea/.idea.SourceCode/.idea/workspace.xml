@@ -4,7 +4,12 @@
     <list default="true" id="87cff07d-160c-44d3-9256-fd605623aabb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SourceCode.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.resx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +22,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Controlador/DepartmentDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Modelo/Department.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Menu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controlador/ConnectionDB.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controlador/RegistryDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vista/Form1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controlador/UserDAO.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,6 +47,8 @@
         <option value="$PROJECT_DIR$/Modelo/Registro.cs" />
         <option value="$PROJECT_DIR$/Modelo/Registry.cs" />
         <option value="$PROJECT_DIR$/Controlador/RegistryDAO.cs" />
+        <option value="$PROJECT_DIR$/Vista/Form1.cs" />
+        <option value="$PROJECT_DIR$/Vista/Menu.Designer.cs" />
       </list>
     </option>
   </component>
@@ -87,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593702994795</updated>
       <workItem from="1593703007477" duration="2101000" />
-      <workItem from="1593707173533" duration="640000" />
+      <workItem from="1593707173533" duration="2454000" />
     </task>
     <servers />
   </component>
@@ -96,6 +106,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="670" y="209" key="RiderGenerateDialog" timestamp="1593704727169">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -16,5 +16,11 @@ namespace SourceCode
         {
             InitializeComponent();
         }
+
+        private void picBtnArrow_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("JEJE");
+            //Avanzar al otro form
+        }
     }
 }

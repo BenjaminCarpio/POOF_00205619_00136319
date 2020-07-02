@@ -29,12 +29,17 @@
         <e p="Settings.settings" t="Include" />
       </e>
       <e p="Recursos" t="Include" />
+      <e p="Resources" t="Include">
+        <e p="Background_login.jpeg" t="Include" />
+      </e>
       <e p="SourceCode.csproj" t="IncludeRecursive" />
       <e p="SourceCode.sln" t="IncludeFlat" />
       <e p="Vista" t="Include">
         <e p="Form1.cs" t="Include" />
         <e p="Form1.Designer.cs" t="Include" />
         <e p="Form1.resx" t="Include" />
+        <e p="Menu.cs" t="Include" />
+        <e p="Menu.Designer.cs" t="Include" />
       </e>
     </e>
   </component>
