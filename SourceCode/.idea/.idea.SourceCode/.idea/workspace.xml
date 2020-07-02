@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87cff07d-160c-44d3-9256-fd605623aabb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/ConnectionDB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ConnectionDB.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SourceCode.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/Menu.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Menu.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.pdb" afterDir="false" />
@@ -27,11 +24,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Vista/Menu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Vista/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Vista/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Menu.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Vista/Form1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controlador/DepartmentDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controlador/ConnectionDB.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Modelo/User.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,6 +33,10 @@
     <setting file="file://$PROJECT_DIR$/Modelo/Registry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Modelo/Department.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controlador/UserDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Menu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vista/Form1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,10 +51,10 @@
         <option value="$PROJECT_DIR$/Modelo/Registro.cs" />
         <option value="$PROJECT_DIR$/Modelo/Registry.cs" />
         <option value="$PROJECT_DIR$/Controlador/RegistryDAO.cs" />
-        <option value="$PROJECT_DIR$/Vista/Menu.Designer.cs" />
         <option value="$PROJECT_DIR$/Controlador/ConnectionDB.cs" />
-        <option value="$PROJECT_DIR$/Vista/Menu.cs" />
         <option value="$PROJECT_DIR$/Vista/Form1.cs" />
+        <option value="$PROJECT_DIR$/Vista/Menu.cs" />
+        <option value="$PROJECT_DIR$/Vista/Menu.Designer.cs" />
       </list>
     </option>
   </component>
@@ -108,6 +106,8 @@
       <workItem from="1593707173533" duration="2758000" />
       <workItem from="1593711317819" duration="2493000" />
       <workItem from="1593715357076" duration="4685000" />
+      <workItem from="1593722178623" duration="9020000" />
+      <workItem from="1593731501388" duration="356000" />
     </task>
     <servers />
   </component>
@@ -130,25 +130,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1805" height="295" key="GridCell.Tab.0.bottom" timestamp="1593721420238">
+    <state width="1805" height="232" key="GridCell.Tab.0.bottom" timestamp="1593731475426">
       <screen x="0" y="0" width="1848" height="1080" />
     </state>
-    <state width="1805" height="295" key="GridCell.Tab.0.bottom/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593721420238" />
+    <state width="1805" height="232" key="GridCell.Tab.0.bottom/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593731475426" />
     <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
-    <state width="1805" height="295" key="GridCell.Tab.0.center" timestamp="1593721420237">
+    <state width="1805" height="232" key="GridCell.Tab.0.center" timestamp="1593731475425">
       <screen x="0" y="0" width="1848" height="1080" />
     </state>
-    <state width="1805" height="295" key="GridCell.Tab.0.center/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593721420237" />
+    <state width="1805" height="232" key="GridCell.Tab.0.center/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593731475425" />
     <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
-    <state width="1805" height="295" key="GridCell.Tab.0.left" timestamp="1593721420237">
+    <state width="1805" height="232" key="GridCell.Tab.0.left" timestamp="1593731475425">
       <screen x="0" y="0" width="1848" height="1080" />
     </state>
-    <state width="1805" height="295" key="GridCell.Tab.0.left/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593721420237" />
+    <state width="1805" height="232" key="GridCell.Tab.0.left/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593731475425" />
     <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
-    <state width="1805" height="295" key="GridCell.Tab.0.right" timestamp="1593721420238">
+    <state width="1805" height="232" key="GridCell.Tab.0.right" timestamp="1593731475425">
       <screen x="0" y="0" width="1848" height="1080" />
     </state>
-    <state width="1805" height="295" key="GridCell.Tab.0.right/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593721420238" />
+    <state width="1805" height="232" key="GridCell.Tab.0.right/0.0.1848.1080/1920.0.1858.1080@0.0.1848.1080" timestamp="1593731475425" />
     <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.175.1600.860@0.0.1920.1040" timestamp="1593713812458" />
     <state width="1805" height="364" key="GridCell.Tab.1.bottom" timestamp="1593721420230">
       <screen x="0" y="0" width="1848" height="1080" />

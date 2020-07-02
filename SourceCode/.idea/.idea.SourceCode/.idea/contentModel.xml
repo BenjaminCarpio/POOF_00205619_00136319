@@ -39,6 +39,7 @@
         <e p="Form1.resx" t="Include" />
         <e p="Menu.cs" t="Include" />
         <e p="Menu.Designer.cs" t="Include" />
+        <e p="Menu.resx" t="Include" />
       </e>
     </e>
   </component>
