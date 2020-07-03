@@ -4,13 +4,14 @@ namespace SourceCode.Modelo
 {
     public class Registry
     {
-        public int idRegistry;
-        public int idUser;
-        public bool entrance;
-        public DateTime date_time;
-        public double temperature;
+        public int idRegistry { get; set; }
+        public string idUser { get; set; }
+        public bool entrance { get; set; }
+        public DateTime date_time { get; set; }
+        public double temperature { get; set; }
 
-        public Registry(int idRegistry, int idUser, bool entrance, DateTime dateTime, double temperature)
+        public Registry(){}
+        public Registry(int idRegistry, string idUser, bool entrance, DateTime dateTime, double temperature)
         {
             this.idRegistry = idRegistry;
             this.idUser = idUser;

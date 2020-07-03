@@ -4,15 +4,16 @@ namespace SourceCode.Modelo
 {
     public class User
     {
-        public int idUser;
-        public int idDepartment;
-        public string password;
-        public string name;
-        public string lastName;
-        public string dui;
-        public DateTime birthDate;
+        public string idUser { get; set; }
+        public int idDepartment { get; set; }
+        public string password { get; set; }
+        public string name { get; set; }
+        public string lastName { get; set; }
+        public string dui { get; set; }
+        public DateTime birthDate { get; set; }
 
-        public User(int idUser, int idDepartment, string password, string name, string lastName, string dui, DateTime birthDate)
+        public User(){}
+        public User(string idUser, int idDepartment, string password, string name, string lastName, string dui, DateTime birthDate)
         {
             this.idUser = idUser;
             this.idDepartment = idDepartment;

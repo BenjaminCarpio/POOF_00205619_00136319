@@ -14,6 +14,7 @@ namespace SourceCode
     public partial class Form1 : Form
     {
         public static int userType;
+        public static string username;
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace SourceCode
 
         private void picBtnArrow_Click(object sender, EventArgs e)
         {
-            string username = txtId.Text;
+            username = txtId.Text;
             string password = txtPassword.Text;
             
             //codigo xd

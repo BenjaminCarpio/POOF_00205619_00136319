@@ -238,6 +238,7 @@ namespace SourceCode
             this.bttnRefreshUH.TabIndex = 2;
             this.bttnRefreshUH.Text = "Actualizar";
             this.bttnRefreshUH.UseVisualStyleBackColor = true;
+            this.bttnRefreshUH.Click += new System.EventHandler(this.bttnRefreshUH_Click);
             // 
             // tabPage2
             // 
@@ -365,7 +366,7 @@ namespace SourceCode
             this.rbtnNotEnter.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnNotEnter.Location = new System.Drawing.Point(30, 113);
+            this.rbtnNotEnter.Location = new System.Drawing.Point(30, 114);
             this.rbtnNotEnter.Name = "rbtnNotEnter";
             this.rbtnNotEnter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rbtnNotEnter.Size = new System.Drawing.Size(186, 72);
@@ -379,7 +380,7 @@ namespace SourceCode
             this.rbtnExit.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnExit.Location = new System.Drawing.Point(30, 70);
+            this.rbtnExit.Location = new System.Drawing.Point(30, 71);
             this.rbtnExit.Name = "rbtnExit";
             this.rbtnExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rbtnExit.Size = new System.Drawing.Size(186, 54);
@@ -393,7 +394,7 @@ namespace SourceCode
             this.rbtnEntrance.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnEntrance.Location = new System.Drawing.Point(30, 26);
+            this.rbtnEntrance.Location = new System.Drawing.Point(30, 28);
             this.rbtnEntrance.Name = "rbtnEntrance";
             this.rbtnEntrance.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rbtnEntrance.Size = new System.Drawing.Size(186, 54);
@@ -435,6 +436,7 @@ namespace SourceCode
             this.btnAddRegistry.TabIndex = 8;
             this.btnAddRegistry.Text = "Realizar Registro";
             this.btnAddRegistry.UseVisualStyleBackColor = true;
+            this.btnAddRegistry.Click += new System.EventHandler(this.btnAddRegistry_Click);
             // 
             // tabPage3
             // 
@@ -686,14 +688,15 @@ namespace SourceCode
             this.btnAddEmployee.TabIndex = 12;
             this.btnAddEmployee.Text = "Agregar empleado";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.tableLayoutPanel8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(809, 451);
+            this.tabPage6.Size = new System.Drawing.Size(811, 451);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Eliminar Empleado";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -723,7 +726,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel8.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(803, 445);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(805, 445);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label12
@@ -733,7 +736,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(395, 148);
+            this.label12.Size = new System.Drawing.Size(396, 148);
             this.label12.TabIndex = 1;
             this.label12.Text = "Carnet de empleado a eliminar:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -743,17 +746,18 @@ namespace SourceCode
             this.btnDeleteEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDeleteEmployee.Font = new System.Drawing.Font("Forte", 26.25F);
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(404, 299);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(405, 299);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
-            this.btnDeleteEmployee.Size = new System.Drawing.Size(396, 143);
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(397, 143);
             this.btnDeleteEmployee.TabIndex = 4;
             this.btnDeleteEmployee.Text = "Eliminar empleado";
             this.btnDeleteEmployee.UseVisualStyleBackColor = true;
+            this.btnDeleteEmployee.Click += new System.EventHandler(this.btnDeleteEmployee_Click);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(478, 62);
+            this.textBox1.Location = new System.Drawing.Point(479, 62);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 23);
             this.textBox1.TabIndex = 2;
@@ -766,7 +770,7 @@ namespace SourceCode
             this.dtgEmployeeR.Location = new System.Drawing.Point(3, 151);
             this.dtgEmployeeR.Name = "dtgEmployeeR";
             this.tableLayoutPanel8.SetRowSpan(this.dtgEmployeeR, 2);
-            this.dtgEmployeeR.Size = new System.Drawing.Size(395, 291);
+            this.dtgEmployeeR.Size = new System.Drawing.Size(396, 291);
             this.dtgEmployeeR.TabIndex = 0;
             // 
             // label13
@@ -774,9 +778,9 @@ namespace SourceCode
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label13.Location = new System.Drawing.Point(404, 148);
+            this.label13.Location = new System.Drawing.Point(405, 148);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(396, 148);
+            this.label13.Size = new System.Drawing.Size(397, 148);
             this.label13.TabIndex = 3;
             this.label13.Text = "<== Lista de empleados";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -849,10 +853,10 @@ namespace SourceCode
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.dtgEmployeeInWork);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(809, 451);
+            this.tabPage8.Size = new System.Drawing.Size(811, 451);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Empleados dentro de la empresa";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -864,15 +868,15 @@ namespace SourceCode
             this.dtgEmployeeInWork.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgEmployeeInWork.Location = new System.Drawing.Point(3, 3);
             this.dtgEmployeeInWork.Name = "dtgEmployeeInWork";
-            this.dtgEmployeeInWork.Size = new System.Drawing.Size(803, 445);
+            this.dtgEmployeeInWork.Size = new System.Drawing.Size(805, 445);
             this.dtgEmployeeInWork.TabIndex = 1;
             // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.dtgMostPeopleIn);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(809, 451);
+            this.tabPage9.Size = new System.Drawing.Size(811, 451);
             this.tabPage9.TabIndex = 2;
             this.tabPage9.Text = "Departamento mas concurrido";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -884,15 +888,15 @@ namespace SourceCode
             this.dtgMostPeopleIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgMostPeopleIn.Location = new System.Drawing.Point(0, 0);
             this.dtgMostPeopleIn.Name = "dtgMostPeopleIn";
-            this.dtgMostPeopleIn.Size = new System.Drawing.Size(809, 451);
+            this.dtgMostPeopleIn.Size = new System.Drawing.Size(811, 451);
             this.dtgMostPeopleIn.TabIndex = 2;
             // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.dtgTopTemps);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(809, 451);
+            this.tabPage10.Size = new System.Drawing.Size(811, 451);
             this.tabPage10.TabIndex = 3;
             this.tabPage10.Text = "Temperaturas más altas (5)";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -904,15 +908,15 @@ namespace SourceCode
             this.dtgTopTemps.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgTopTemps.Location = new System.Drawing.Point(0, 0);
             this.dtgTopTemps.Name = "dtgTopTemps";
-            this.dtgTopTemps.Size = new System.Drawing.Size(809, 451);
+            this.dtgTopTemps.Size = new System.Drawing.Size(811, 451);
             this.dtgTopTemps.TabIndex = 2;
             // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.dtg60Plus);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(809, 451);
+            this.tabPage11.Size = new System.Drawing.Size(811, 451);
             this.tabPage11.TabIndex = 4;
             this.tabPage11.Text = "Empleados 60+ (Edad)";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -924,7 +928,7 @@ namespace SourceCode
             this.dtg60Plus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtg60Plus.Location = new System.Drawing.Point(0, 0);
             this.dtg60Plus.Name = "dtg60Plus";
-            this.dtg60Plus.Size = new System.Drawing.Size(809, 451);
+            this.dtg60Plus.Size = new System.Drawing.Size(811, 451);
             this.dtg60Plus.TabIndex = 2;
             // 
             // tableLayoutPanel9
@@ -979,6 +983,7 @@ namespace SourceCode
             this.picExit.Size = new System.Drawing.Size(82, 122);
             this.picExit.TabIndex = 1;
             this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
             // picReload
             // 
@@ -988,6 +993,7 @@ namespace SourceCode
             this.picReload.Size = new System.Drawing.Size(82, 123);
             this.picReload.TabIndex = 0;
             this.picReload.TabStop = false;
+            this.picReload.Click += new System.EventHandler(this.picReload_Click);
             // 
             // tableLayoutPanel5
             // 
