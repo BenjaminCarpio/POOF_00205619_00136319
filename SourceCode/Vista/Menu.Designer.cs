@@ -31,6 +31,8 @@ namespace SourceCode
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tabMenu = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -141,11 +143,13 @@ namespace SourceCode
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.BackgroundImage =
+                ((System.Drawing.Image) (resources.GetObject("tableLayoutPanel1.BackgroundImage")));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88F));
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel1.Controls.Add(this.tabMenu, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -167,7 +171,7 @@ namespace SourceCode
             this.tabMenu.Location = new System.Drawing.Point(3, 3);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.SelectedIndex = 0;
-            this.tabMenu.Size = new System.Drawing.Size(833, 513);
+            this.tabMenu.Size = new System.Drawing.Size(815, 513);
             this.tabMenu.TabIndex = 0;
             // 
             // tabPage1
@@ -176,7 +180,7 @@ namespace SourceCode
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(825, 485);
+            this.tabPage1.Size = new System.Drawing.Size(807, 485);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ver historial";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -200,7 +204,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(819, 479);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(801, 479);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // dtgUserHistory
@@ -211,7 +215,7 @@ namespace SourceCode
             this.dtgUserHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgUserHistory.Location = new System.Drawing.Point(3, 98);
             this.dtgUserHistory.Name = "dtgUserHistory";
-            this.dtgUserHistory.Size = new System.Drawing.Size(813, 378);
+            this.dtgUserHistory.Size = new System.Drawing.Size(795, 378);
             this.dtgUserHistory.TabIndex = 0;
             // 
             // label1
@@ -221,7 +225,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(403, 95);
+            this.label1.Size = new System.Drawing.Size(394, 95);
             this.label1.TabIndex = 1;
             this.label1.Text = "Historial";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,9 +236,9 @@ namespace SourceCode
             this.bttnRefreshUH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bttnRefreshUH.Font = new System.Drawing.Font("Forte", 18F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.bttnRefreshUH.Location = new System.Drawing.Point(412, 3);
+            this.bttnRefreshUH.Location = new System.Drawing.Point(403, 3);
             this.bttnRefreshUH.Name = "bttnRefreshUH";
-            this.bttnRefreshUH.Size = new System.Drawing.Size(404, 89);
+            this.bttnRefreshUH.Size = new System.Drawing.Size(395, 89);
             this.bttnRefreshUH.TabIndex = 2;
             this.bttnRefreshUH.Text = "Actualizar";
             this.bttnRefreshUH.UseVisualStyleBackColor = true;
@@ -246,7 +250,7 @@ namespace SourceCode
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(825, 485);
+            this.tabPage2.Size = new System.Drawing.Size(807, 485);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Registro de entrada";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -284,7 +288,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(819, 479);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(801, 479);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // label5
@@ -293,9 +297,9 @@ namespace SourceCode
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Forte", 27.75F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label5.Location = new System.Drawing.Point(371, 95);
+            this.label5.Location = new System.Drawing.Point(363, 95);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(445, 95);
+            this.label5.Size = new System.Drawing.Size(435, 95);
             this.label5.TabIndex = 3;
             this.label5.Text = "Hora del registro";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,7 +311,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label4.Location = new System.Drawing.Point(3, 95);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(362, 95);
+            this.label4.Size = new System.Drawing.Size(354, 95);
             this.label4.TabIndex = 2;
             this.label4.Text = "Usuario";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -320,7 +324,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(813, 95);
+            this.label2.Size = new System.Drawing.Size(795, 95);
             this.label2.TabIndex = 1;
             this.label2.Text = "Registro";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,7 +335,7 @@ namespace SourceCode
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel4.SetColumnSpan(this.dateTimePicker1, 2);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(537, 226);
+            this.dateTimePicker1.Location = new System.Drawing.Point(524, 226);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(112, 23);
             this.dateTimePicker1.TabIndex = 0;
@@ -340,7 +344,7 @@ namespace SourceCode
             // 
             this.cmbRegistUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbRegistUser.FormattingEnabled = true;
-            this.cmbRegistUser.Location = new System.Drawing.Point(70, 226);
+            this.cmbRegistUser.Location = new System.Drawing.Point(66, 226);
             this.cmbRegistUser.Name = "cmbRegistUser";
             this.cmbRegistUser.Size = new System.Drawing.Size(228, 23);
             this.cmbRegistUser.TabIndex = 4;
@@ -356,7 +360,7 @@ namespace SourceCode
             this.groupBox1.Location = new System.Drawing.Point(3, 288);
             this.groupBox1.Name = "groupBox1";
             this.tableLayoutPanel4.SetRowSpan(this.groupBox1, 2);
-            this.groupBox1.Size = new System.Drawing.Size(362, 188);
+            this.groupBox1.Size = new System.Drawing.Size(354, 188);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo de registro";
@@ -366,10 +370,10 @@ namespace SourceCode
             this.rbtnNotEnter.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnNotEnter.Location = new System.Drawing.Point(30, 114);
+            this.rbtnNotEnter.Location = new System.Drawing.Point(30, 115);
             this.rbtnNotEnter.Name = "rbtnNotEnter";
             this.rbtnNotEnter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rbtnNotEnter.Size = new System.Drawing.Size(186, 72);
+            this.rbtnNotEnter.Size = new System.Drawing.Size(178, 72);
             this.rbtnNotEnter.TabIndex = 2;
             this.rbtnNotEnter.TabStop = true;
             this.rbtnNotEnter.Text = "Acceso denegado (Fiebre alta)";
@@ -380,10 +384,10 @@ namespace SourceCode
             this.rbtnExit.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnExit.Location = new System.Drawing.Point(30, 71);
+            this.rbtnExit.Location = new System.Drawing.Point(30, 73);
             this.rbtnExit.Name = "rbtnExit";
             this.rbtnExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rbtnExit.Size = new System.Drawing.Size(186, 54);
+            this.rbtnExit.Size = new System.Drawing.Size(178, 54);
             this.rbtnExit.TabIndex = 1;
             this.rbtnExit.TabStop = true;
             this.rbtnExit.Text = "Salida";
@@ -394,10 +398,10 @@ namespace SourceCode
             this.rbtnEntrance.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnEntrance.Location = new System.Drawing.Point(30, 28);
+            this.rbtnEntrance.Location = new System.Drawing.Point(30, 29);
             this.rbtnEntrance.Name = "rbtnEntrance";
             this.rbtnEntrance.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rbtnEntrance.Size = new System.Drawing.Size(186, 54);
+            this.rbtnEntrance.Size = new System.Drawing.Size(178, 54);
             this.rbtnEntrance.TabIndex = 0;
             this.rbtnEntrance.TabStop = true;
             this.rbtnEntrance.Text = "Entrada";
@@ -408,9 +412,9 @@ namespace SourceCode
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.Location = new System.Drawing.Point(371, 285);
+            this.label6.Location = new System.Drawing.Point(363, 285);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(239, 95);
+            this.label6.Size = new System.Drawing.Size(233, 95);
             this.label6.TabIndex = 6;
             this.label6.Text = "Temperatura:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -418,7 +422,7 @@ namespace SourceCode
             // txtTemp
             // 
             this.txtTemp.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTemp.Location = new System.Drawing.Point(633, 321);
+            this.txtTemp.Location = new System.Drawing.Point(617, 321);
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(166, 23);
             this.txtTemp.TabIndex = 7;
@@ -430,9 +434,9 @@ namespace SourceCode
             this.btnAddRegistry.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddRegistry.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnAddRegistry.Location = new System.Drawing.Point(371, 383);
+            this.btnAddRegistry.Location = new System.Drawing.Point(363, 383);
             this.btnAddRegistry.Name = "btnAddRegistry";
-            this.btnAddRegistry.Size = new System.Drawing.Size(445, 93);
+            this.btnAddRegistry.Size = new System.Drawing.Size(435, 93);
             this.btnAddRegistry.TabIndex = 8;
             this.btnAddRegistry.Text = "Realizar Registro";
             this.btnAddRegistry.UseVisualStyleBackColor = true;
@@ -443,7 +447,7 @@ namespace SourceCode
             this.tabPage3.Controls.Add(this.tableLayoutPanel6);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(825, 485);
+            this.tabPage3.Size = new System.Drawing.Size(807, 485);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mantenimiento (Admin)";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -465,7 +469,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 483F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(825, 485);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(807, 485);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // tabMaintenance
@@ -476,7 +480,7 @@ namespace SourceCode
             this.tabMaintenance.Location = new System.Drawing.Point(3, 3);
             this.tabMaintenance.Name = "tabMaintenance";
             this.tabMaintenance.SelectedIndex = 0;
-            this.tabMaintenance.Size = new System.Drawing.Size(819, 479);
+            this.tabMaintenance.Size = new System.Drawing.Size(801, 479);
             this.tabMaintenance.TabIndex = 0;
             // 
             // tabPage5
@@ -485,7 +489,7 @@ namespace SourceCode
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(811, 451);
+            this.tabPage5.Size = new System.Drawing.Size(793, 451);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Agregar Empleado";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -526,13 +530,13 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(805, 445);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(787, 445);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // txtLastName
             // 
             this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLastName.Location = new System.Drawing.Point(586, 122);
+            this.txtLastName.Location = new System.Drawing.Point(571, 122);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(167, 23);
             this.txtLastName.TabIndex = 7;
@@ -540,7 +544,7 @@ namespace SourceCode
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtName.Location = new System.Drawing.Point(318, 122);
+            this.txtName.Location = new System.Drawing.Point(309, 122);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(167, 23);
             this.txtName.TabIndex = 6;
@@ -550,9 +554,9 @@ namespace SourceCode
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label9.Location = new System.Drawing.Point(540, 3);
+            this.label9.Location = new System.Drawing.Point(528, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(259, 85);
+            this.label9.Size = new System.Drawing.Size(253, 85);
             this.label9.TabIndex = 2;
             this.label9.Text = "Apellido";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -562,9 +566,9 @@ namespace SourceCode
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label8.Location = new System.Drawing.Point(273, 3);
+            this.label8.Location = new System.Drawing.Point(267, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(258, 85);
+            this.label8.Size = new System.Drawing.Size(252, 85);
             this.label8.TabIndex = 1;
             this.label8.Text = "Nombre";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -576,7 +580,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label7.Location = new System.Drawing.Point(6, 3);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(258, 85);
+            this.label7.Size = new System.Drawing.Size(252, 85);
             this.label7.TabIndex = 0;
             this.label7.Text = "Carnet";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -584,7 +588,7 @@ namespace SourceCode
             // txtCarnet
             // 
             this.txtCarnet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCarnet.Location = new System.Drawing.Point(51, 122);
+            this.txtCarnet.Location = new System.Drawing.Point(48, 122);
             this.txtCarnet.Name = "txtCarnet";
             this.txtCarnet.Size = new System.Drawing.Size(167, 23);
             this.txtCarnet.TabIndex = 5;
@@ -596,7 +600,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label11.Location = new System.Drawing.Point(6, 179);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(258, 85);
+            this.label11.Size = new System.Drawing.Size(252, 85);
             this.label11.TabIndex = 4;
             this.label11.Text = "Fecha de nacimiento";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -614,9 +618,9 @@ namespace SourceCode
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label10.Location = new System.Drawing.Point(273, 179);
+            this.label10.Location = new System.Drawing.Point(267, 179);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(258, 85);
+            this.label10.Size = new System.Drawing.Size(252, 85);
             this.label10.TabIndex = 3;
             this.label10.Text = "Dui";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -624,7 +628,7 @@ namespace SourceCode
             // txtDui
             // 
             this.txtDui.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDui.Location = new System.Drawing.Point(318, 298);
+            this.txtDui.Location = new System.Drawing.Point(309, 298);
             this.txtDui.Name = "txtDui";
             this.txtDui.Size = new System.Drawing.Size(167, 23);
             this.txtDui.TabIndex = 8;
@@ -637,10 +641,10 @@ namespace SourceCode
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Forte", 15.75F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.groupBox2.Location = new System.Drawing.Point(540, 182);
+            this.groupBox2.Location = new System.Drawing.Point(528, 182);
             this.groupBox2.Name = "groupBox2";
             this.tableLayoutPanel7.SetRowSpan(this.groupBox2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(259, 167);
+            this.groupBox2.Size = new System.Drawing.Size(253, 167);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cargo";
@@ -682,9 +686,9 @@ namespace SourceCode
             this.btnAddEmployee.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddEmployee.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnAddEmployee.Location = new System.Drawing.Point(273, 358);
+            this.btnAddEmployee.Location = new System.Drawing.Point(267, 358);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(526, 81);
+            this.btnAddEmployee.Size = new System.Drawing.Size(514, 81);
             this.btnAddEmployee.TabIndex = 12;
             this.btnAddEmployee.Text = "Agregar empleado";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
@@ -696,7 +700,7 @@ namespace SourceCode
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(811, 451);
+            this.tabPage6.Size = new System.Drawing.Size(793, 451);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Eliminar Empleado";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -726,7 +730,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel8.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(805, 445);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(787, 445);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label12
@@ -736,7 +740,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(396, 148);
+            this.label12.Size = new System.Drawing.Size(387, 148);
             this.label12.TabIndex = 1;
             this.label12.Text = "Carnet de empleado a eliminar:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -746,9 +750,9 @@ namespace SourceCode
             this.btnDeleteEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDeleteEmployee.Font = new System.Drawing.Font("Forte", 26.25F);
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(405, 299);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(396, 299);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
-            this.btnDeleteEmployee.Size = new System.Drawing.Size(397, 143);
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(388, 143);
             this.btnDeleteEmployee.TabIndex = 4;
             this.btnDeleteEmployee.Text = "Eliminar empleado";
             this.btnDeleteEmployee.UseVisualStyleBackColor = true;
@@ -757,7 +761,7 @@ namespace SourceCode
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(479, 62);
+            this.textBox1.Location = new System.Drawing.Point(466, 62);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 23);
             this.textBox1.TabIndex = 2;
@@ -770,7 +774,7 @@ namespace SourceCode
             this.dtgEmployeeR.Location = new System.Drawing.Point(3, 151);
             this.dtgEmployeeR.Name = "dtgEmployeeR";
             this.tableLayoutPanel8.SetRowSpan(this.dtgEmployeeR, 2);
-            this.dtgEmployeeR.Size = new System.Drawing.Size(396, 291);
+            this.dtgEmployeeR.Size = new System.Drawing.Size(387, 291);
             this.dtgEmployeeR.TabIndex = 0;
             // 
             // label13
@@ -778,9 +782,9 @@ namespace SourceCode
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label13.Location = new System.Drawing.Point(405, 148);
+            this.label13.Location = new System.Drawing.Point(396, 148);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(397, 148);
+            this.label13.Size = new System.Drawing.Size(388, 148);
             this.label13.TabIndex = 3;
             this.label13.Text = "<== Lista de empleados";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -790,7 +794,7 @@ namespace SourceCode
             this.tabPage4.Controls.Add(this.tableLayoutPanel2);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(825, 485);
+            this.tabPage4.Size = new System.Drawing.Size(807, 485);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ver Reportes";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -812,7 +816,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 483F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(825, 485);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(807, 485);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tabAdminViewer
@@ -826,7 +830,7 @@ namespace SourceCode
             this.tabAdminViewer.Location = new System.Drawing.Point(3, 3);
             this.tabAdminViewer.Name = "tabAdminViewer";
             this.tabAdminViewer.SelectedIndex = 0;
-            this.tabAdminViewer.Size = new System.Drawing.Size(819, 479);
+            this.tabAdminViewer.Size = new System.Drawing.Size(801, 479);
             this.tabAdminViewer.TabIndex = 0;
             // 
             // tabPage7
@@ -835,7 +839,7 @@ namespace SourceCode
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(811, 451);
+            this.tabPage7.Size = new System.Drawing.Size(793, 451);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "General";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -847,7 +851,7 @@ namespace SourceCode
             this.dtgGeneralEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgGeneralEmployee.Location = new System.Drawing.Point(3, 3);
             this.dtgGeneralEmployee.Name = "dtgGeneralEmployee";
-            this.dtgGeneralEmployee.Size = new System.Drawing.Size(805, 445);
+            this.dtgGeneralEmployee.Size = new System.Drawing.Size(787, 445);
             this.dtgGeneralEmployee.TabIndex = 0;
             // 
             // tabPage8
@@ -856,7 +860,7 @@ namespace SourceCode
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(811, 451);
+            this.tabPage8.Size = new System.Drawing.Size(793, 451);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Empleados dentro de la empresa";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -868,7 +872,7 @@ namespace SourceCode
             this.dtgEmployeeInWork.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgEmployeeInWork.Location = new System.Drawing.Point(3, 3);
             this.dtgEmployeeInWork.Name = "dtgEmployeeInWork";
-            this.dtgEmployeeInWork.Size = new System.Drawing.Size(805, 445);
+            this.dtgEmployeeInWork.Size = new System.Drawing.Size(787, 445);
             this.dtgEmployeeInWork.TabIndex = 1;
             // 
             // tabPage9
@@ -876,7 +880,7 @@ namespace SourceCode
             this.tabPage9.Controls.Add(this.dtgMostPeopleIn);
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(811, 451);
+            this.tabPage9.Size = new System.Drawing.Size(793, 451);
             this.tabPage9.TabIndex = 2;
             this.tabPage9.Text = "Departamento mas concurrido";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -888,7 +892,7 @@ namespace SourceCode
             this.dtgMostPeopleIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgMostPeopleIn.Location = new System.Drawing.Point(0, 0);
             this.dtgMostPeopleIn.Name = "dtgMostPeopleIn";
-            this.dtgMostPeopleIn.Size = new System.Drawing.Size(811, 451);
+            this.dtgMostPeopleIn.Size = new System.Drawing.Size(793, 451);
             this.dtgMostPeopleIn.TabIndex = 2;
             // 
             // tabPage10
@@ -896,7 +900,7 @@ namespace SourceCode
             this.tabPage10.Controls.Add(this.dtgTopTemps);
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(811, 451);
+            this.tabPage10.Size = new System.Drawing.Size(793, 451);
             this.tabPage10.TabIndex = 3;
             this.tabPage10.Text = "Temperaturas más altas (5)";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -908,7 +912,7 @@ namespace SourceCode
             this.dtgTopTemps.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgTopTemps.Location = new System.Drawing.Point(0, 0);
             this.dtgTopTemps.Name = "dtgTopTemps";
-            this.dtgTopTemps.Size = new System.Drawing.Size(811, 451);
+            this.dtgTopTemps.Size = new System.Drawing.Size(793, 451);
             this.dtgTopTemps.TabIndex = 2;
             // 
             // tabPage11
@@ -916,7 +920,7 @@ namespace SourceCode
             this.tabPage11.Controls.Add(this.dtg60Plus);
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(811, 451);
+            this.tabPage11.Size = new System.Drawing.Size(793, 451);
             this.tabPage11.TabIndex = 4;
             this.tabPage11.Text = "Empleados 60+ (Edad)";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -928,7 +932,7 @@ namespace SourceCode
             this.dtg60Plus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtg60Plus.Location = new System.Drawing.Point(0, 0);
             this.dtg60Plus.Name = "dtg60Plus";
-            this.dtg60Plus.Size = new System.Drawing.Size(811, 451);
+            this.dtg60Plus.Size = new System.Drawing.Size(793, 451);
             this.dtg60Plus.TabIndex = 2;
             // 
             // tableLayoutPanel9
@@ -943,7 +947,7 @@ namespace SourceCode
             this.tableLayoutPanel9.Controls.Add(this.picExit, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.picReload, 0, 3);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(842, 3);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(824, 3);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(
@@ -954,7 +958,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(88, 513);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(106, 513);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // picJEJE
@@ -962,7 +966,7 @@ namespace SourceCode
             this.picJEJE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picJEJE.Location = new System.Drawing.Point(3, 259);
             this.picJEJE.Name = "picJEJE";
-            this.picJEJE.Size = new System.Drawing.Size(82, 122);
+            this.picJEJE.Size = new System.Drawing.Size(100, 122);
             this.picJEJE.TabIndex = 3;
             this.picJEJE.TabStop = false;
             // 
@@ -971,16 +975,18 @@ namespace SourceCode
             this.picUserType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picUserType.Location = new System.Drawing.Point(3, 131);
             this.picUserType.Name = "picUserType";
-            this.picUserType.Size = new System.Drawing.Size(82, 122);
+            this.picUserType.Size = new System.Drawing.Size(100, 122);
             this.picUserType.TabIndex = 2;
             this.picUserType.TabStop = false;
             // 
             // picExit
             // 
             this.picExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picExit.Image = ((System.Drawing.Image) (resources.GetObject("picExit.Image")));
             this.picExit.Location = new System.Drawing.Point(3, 3);
             this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(82, 122);
+            this.picExit.Size = new System.Drawing.Size(100, 122);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picExit.TabIndex = 1;
             this.picExit.TabStop = false;
             this.picExit.Click += new System.EventHandler(this.picExit_Click);
@@ -988,9 +994,11 @@ namespace SourceCode
             // picReload
             // 
             this.picReload.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picReload.Image = ((System.Drawing.Image) (resources.GetObject("picReload.Image")));
             this.picReload.Location = new System.Drawing.Point(3, 387);
             this.picReload.Name = "picReload";
-            this.picReload.Size = new System.Drawing.Size(82, 123);
+            this.picReload.Size = new System.Drawing.Size(100, 123);
+            this.picReload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picReload.TabIndex = 0;
             this.picReload.TabStop = false;
             this.picReload.Click += new System.EventHandler(this.picReload_Click);

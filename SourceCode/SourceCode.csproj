@@ -95,9 +95,11 @@
         <Compile Include="Controlador\ConnectionDB.cs" />
         <Compile Include="Controlador\DepartmentDAO.cs" />
         <Compile Include="Controlador\RegistryDAO.cs" />
+        <Compile Include="Controlador\TopDAO.cs" />
         <Compile Include="Controlador\UserDAO.cs" />
         <Compile Include="Modelo\Department.cs" />
         <Compile Include="Modelo\Registry.cs" />
+        <Compile Include="Modelo\Top.cs" />
         <Compile Include="Modelo\User.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

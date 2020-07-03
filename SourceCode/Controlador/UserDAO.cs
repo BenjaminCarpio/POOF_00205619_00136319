@@ -19,6 +19,45 @@ namespace SourceCode.Controlador
             {
                 User userID = new User();
                 userID.idUser = Row[1].ToString();
+                list.Add(userID);
+            }
+            return list;
+        }
+
+        public static List<User> getUserFullList()
+        {
+            string sql = $"SELECT * FROM USUARIO";
+
+            DataTable dt = ConnectionDB.ExecuteQuery(sql);
+            List<User> list = new List<User>();
+            foreach (DataRow Row in dt.Rows)
+            {
+                User user = new User();
+                user.idUser = Row[0].ToString();
+                user.idDepartment = Convert.ToInt32(Row[1]);
+                user.name = Row[3].ToString();
+                user.lastName = Row[4].ToString();
+                user.dui = Row[5].ToString();
+                list.Add(user);
+            }
+            return list;
+        }
+        
+        public static List<User> getSeniorList()
+        {
+            string sql = $"SELECT * FROM USUARIO";
+
+            DataTable dt = ConnectionDB.ExecuteQuery(sql);
+            List<User> list = new List<User>();
+            foreach (DataRow Row in dt.Rows)
+            {
+                User user = new User();
+                user.idUser = Row[0].ToString();
+                user.idDepartment = Convert.ToInt32(Row[1]);
+                user.name = Row[3].ToString();
+                user.lastName = Row[4].ToString();
+                user.dui = Row[5].ToString();
+                list.Add(user);
             }
             return list;
         }
@@ -36,21 +75,6 @@ namespace SourceCode.Controlador
             string sql = $"DELETE FROM USUARIO WHERE idUsuario = idUser";
             ConnectionDB.ExecuteNonQuery(sql);
             
-        }
-
-        public static void Top5Temperatures()
-        {
-            string sql = $"SELECT r.idUsuario, u.nombre, u.apellido, r.temperatura "+
-                         $"FROM REGISTRO r, USUARIO u " +
-                         $"WHERE r.idUsuario = u.idUsuario " +
-                         $"ORDER BY r.temperatura DESC LIMIT 5;";
-            DataTable dt = ConnectionDB.ExecuteQuery(sql);
-            //List<> list = new List<>();//Crear clase xd
-            foreach (DataRow Row in dt.Rows)
-            {
-                
-            }
-            ///return list;
         }
     }
 }

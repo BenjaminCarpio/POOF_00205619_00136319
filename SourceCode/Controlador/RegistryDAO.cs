@@ -23,6 +23,7 @@ namespace SourceCode.Controlador
                 reg.entrance = Convert.ToBoolean(Row[2]);
                 reg.date_time = Convert.ToDateTime(Row[3]);
                 reg.temperature = Convert.ToDouble(Row[4]);
+                list.Add(reg);
             }
             return list;
         }
@@ -49,6 +50,7 @@ namespace SourceCode.Controlador
                 reg.entrance = Convert.ToBoolean(Row[2]);
                 reg.date_time = Convert.ToDateTime(Row[3]);
                 reg.temperature = Convert.ToDouble(Row[4]);
+                list.Add(reg);
             }
             return list;
         }
@@ -66,6 +68,7 @@ namespace SourceCode.Controlador
                 reg.idUser = Row[0].ToString();
                 reg.date_time = Convert.ToDateTime(Row[1]);
                 reg.temperature = Convert.ToDouble(Row[2]);
+                list.Add(reg);
             }
             return list;
         }
