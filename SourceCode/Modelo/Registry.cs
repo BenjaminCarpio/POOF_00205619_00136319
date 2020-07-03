@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace SourceCode.Modelo
 {
     public class Registry

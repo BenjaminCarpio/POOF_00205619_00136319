@@ -68,6 +68,7 @@ namespace SourceCode.Controlador
                 $"INSERT INTO USUARIO (idUsuario, idDepartamento, contrasenia, nombre, apellido, dui, fechaNacimiento) " +
                 $"VALUES ('{carnet}', {department}, '{name}', '{name}', '{lastname}', '{dui}', '{birthdate}')";
             ConnectionDB.ExecuteNonQuery(sql);
+            
         }
 
         public static void QuitEmpoloyee(string idUser)

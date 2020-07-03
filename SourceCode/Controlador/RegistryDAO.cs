@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Windows.Forms;
 using SourceCode.Modelo;
 
 namespace SourceCode.Controlador
@@ -33,6 +34,7 @@ namespace SourceCode.Controlador
             string sql = "INSERT INTO REGISTRO (idUsuario, entrada, fechahora, temperatura) " +
                          $"VALUES ('{idUser}', {entrance}, '{fechahora}', {temp})";
             ConnectionDB.ExecuteNonQuery(sql);
+            MessageBox.Show("Agregado correctamente");
         }
         
         public static List<Registry> GeneralHistory()

@@ -27,14 +27,19 @@ namespace SourceCode
                     tabMenu.TabPages.Remove(tabPage1);
                     tabMenu.TabPages.Remove(tabPage2);
                     picUserType.BackgroundImage = Image.FromFile("../../Resources/Admin.jpeg");
+                    picJEJE.BackgroundImage = Image.FromFile("../../Resources/SoyAdmin.jpeg");
                     picUserType.BackgroundImageLayout = ImageLayout.Stretch;
+                    picJEJE.BackgroundImageLayout = ImageLayout.Stretch;
                     refreshDataDelegate = LoadDataGridInReportesTab;
+                    //refreshDataDelegate += LoadFamousDepartment;
                     break;
                 case 2:
                     tabMenu.TabPages.Remove(tabPage1);
                     tabMenu.TabPages.Remove(tabPage3);
                     tabMenu.TabPages.Remove(tabPage4);
                     picUserType.BackgroundImage = Image.FromFile("../../Resources/Guard.jpeg");
+                    picJEJE.BackgroundImage = Image.FromFile("../../Resources/NoFuiAdmin.jpeg");
+                    picJEJE.BackgroundImageLayout = ImageLayout.Stretch;
                     picUserType.BackgroundImageLayout = ImageLayout.Stretch;
                     refreshDataDelegate = LoadComboBoxInGuardTab;
                     break;
@@ -43,6 +48,8 @@ namespace SourceCode
                     tabMenu.TabPages.Remove(tabPage3);
                     tabMenu.TabPages.Remove(tabPage4);
                     picUserType.BackgroundImage = Image.FromFile("../../Resources/Employee.jpeg");
+                    picJEJE.BackgroundImage = Image.FromFile("../../Resources/NoFuiAdmin.jpeg");
+                    picJEJE.BackgroundImageLayout = ImageLayout.Stretch;
                     picUserType.BackgroundImageLayout = ImageLayout.Stretch;
                     refreshDataDelegate = LoadHistory;
                     break;
@@ -57,13 +64,7 @@ namespace SourceCode
             dtgUserHistory.DataSource = null;
             dtgUserHistory.DataSource = historyList;
         }
-
-        private void LoadEmployeeDeleteRegistry()
-        {
-            List<User> deleteEmployee = UserDAO.getUserFullList();
-            dtgUserHistory.DataSource = null;
-            dtgUserHistory.DataSource = deleteEmployee;
-        }
+        
         private void LoadDataGridInReportesTab()
         {
             List<Registry> generalList = RegistryDAO.GeneralHistory();
@@ -90,8 +91,12 @@ namespace SourceCode
             cmbRegistUser.DisplayMember = "idUser";
             cmbRegistUser.DataSource = userList;
         }
-        private void LoadLabel(){
-        
+        private void LoadFamousDepartment()
+        {
+            var department = DepartmentDAO.MostPeople();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = department;
+
         }
         #endregion
         
@@ -110,7 +115,7 @@ namespace SourceCode
             }
             else
             {
-                string idUser = cmbRegistUser.SelectedText;
+                string idUser = cmbRegistUser.SelectedValue.ToString();
                 bool entrance;
                 if (rbtnEntrance.Checked)
                 {
