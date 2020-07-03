@@ -14,7 +14,7 @@ namespace SourceCode.Controlador
             var fecha = DateTime.Now.ToShortDateString();
             string sql = $"SELECT d.nombre, count(u.idDepartamento) as frecuencia " +
                          $"FROM REGISTRO r, DEPARTAMENTO d, USUARIO u " +
-                         $"WHERE r.idUsuario = u.idUsuario AND d.idDepartamento = u.idDepartamento AND entrada = true AND fechaHora = {fecha} " +
+                         $"WHERE r.idUsuario = u.idUsuario AND d.idDepartamento = u.idDepartamento AND entrada = true AND fechaHora = '{fecha}' " +
                          $"GROUP BY d.idDepartamento ORDER BY frecuencia DESC LIMIT 1;";
 
             DataTable dt = ConnectionDB.ExecuteQuery(sql);

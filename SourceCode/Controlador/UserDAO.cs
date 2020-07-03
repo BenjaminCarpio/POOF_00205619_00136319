@@ -62,17 +62,17 @@ namespace SourceCode.Controlador
             return list;
         }
 
-        public static void AddEmployee()
+        public static void AddEmployee(string carnet, int department, string name, string lastname, string dui, string birthdate)
         {
             string sql =
                 $"INSERT INTO USUARIO (idUsuario, idDepartamento, contrasenia, nombre, apellido, dui, fechaNacimiento) " +
-                $"VALUES ()";
+                $"VALUES ('{carnet}', {department}, '{name}', '{name}', '{lastname}', '{dui}', '{birthdate}')";
             ConnectionDB.ExecuteNonQuery(sql);
         }
 
-        public static void QuitEmpoloyee()
+        public static void QuitEmpoloyee(string idUser)
         {
-            string sql = $"DELETE FROM USUARIO WHERE idUsuario = idUser";
+            string sql = $"DELETE FROM USUARIO WHERE idUsuario = '{idUser}'";
             ConnectionDB.ExecuteNonQuery(sql);
             
         }

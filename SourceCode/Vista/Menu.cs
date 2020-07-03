@@ -10,15 +10,17 @@ namespace SourceCode
     public partial class Menu : Form
     {
         public int userType = Form1.userType;
+        public string userID;
 
         private delegate void MyDelegate();
 
-        private static MyDelegate LoadDataGrid;
+        private static MyDelegate  refreshDataDelegate = null;
+        
 
         public Menu()
         {
             InitializeComponent();
-            LoadDataGrid = null;
+            userID = Form1.username;
             switch (userType)
             {
                 case 1:
@@ -26,7 +28,7 @@ namespace SourceCode
                     tabMenu.TabPages.Remove(tabPage2);
                     picUserType.BackgroundImage = Image.FromFile("../../Resources/Admin.jpeg");
                     picUserType.BackgroundImageLayout = ImageLayout.Stretch;
-                    LoadDataGrid = LoadDataGridInReportesTab;
+                    refreshDataDelegate = LoadDataGridInReportesTab;
                     break;
                 case 2:
                     tabMenu.TabPages.Remove(tabPage1);
@@ -34,7 +36,7 @@ namespace SourceCode
                     tabMenu.TabPages.Remove(tabPage4);
                     picUserType.BackgroundImage = Image.FromFile("../../Resources/Guard.jpeg");
                     picUserType.BackgroundImageLayout = ImageLayout.Stretch;
-                    LoadDataGrid = null;
+                    refreshDataDelegate = LoadComboBoxInGuardTab;
                     break;
                 case 3:
                     tabMenu.TabPages.Remove(tabPage2);
@@ -42,28 +44,27 @@ namespace SourceCode
                     tabMenu.TabPages.Remove(tabPage4);
                     picUserType.BackgroundImage = Image.FromFile("../../Resources/Employee.jpeg");
                     picUserType.BackgroundImageLayout = ImageLayout.Stretch;
-                    LoadDataGrid = LoadHistory;
+                    refreshDataDelegate = LoadHistory;
                     break;
             }
-
-            LoadDataGrid?.Invoke();
+            refreshDataDelegate?.Invoke();
         }
 
-        #region Load datagrid
-        public  void  LoadHistory()
+        #region Load data
+        private void  LoadHistory()
         {
-            List<Registry> historyList = RegistryDAO.GeneralHistory();
+            List<Registry> historyList = RegistryDAO.getPersonalHistory(userID);
             dtgUserHistory.DataSource = null;
             dtgUserHistory.DataSource = historyList;
         }
 
-        public void LoadEmployeeDeleteRegistry()
+        private void LoadEmployeeDeleteRegistry()
         {
             List<User> deleteEmployee = UserDAO.getUserFullList();
             dtgUserHistory.DataSource = null;
             dtgUserHistory.DataSource = deleteEmployee;
         }
-        public void LoadDataGridInReportesTab()
+        private void LoadDataGridInReportesTab()
         {
             List<Registry> generalList = RegistryDAO.GeneralHistory();
             dtgGeneralEmployee.DataSource = null;
@@ -77,39 +78,89 @@ namespace SourceCode
             List<User> seniorList = UserDAO.getSeniorList();        //Cargar bien esta lista
             dtg60Plus.DataSource = null;
             dtg60Plus.DataSource = seniorList;
-            
+            List<User> employeeList = UserDAO.getUserFullList();
+            dtgEmployeeR.DataSource = null;
+            dtgEmployeeR.DataSource = employeeList;
+        }
+
+        private void LoadComboBoxInGuardTab()
+        {
+            var userList = UserDAO.getUserFullList();
+            cmbRegistUser.ValueMember = "idUser";
+            cmbRegistUser.DisplayMember = "idUser";
+            cmbRegistUser.DataSource = userList;
+        }
+        private void LoadLabel(){
+        
         }
         #endregion
         
 
         private void bttnRefreshUH_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            refreshDataDelegate?.Invoke();
         }
 
         private void btnAddRegistry_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            if (txtTemp.Equals(""))
+            {
+                MessageBox.Show("No se permiten campos vacios", "Error Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                string idUser = cmbRegistUser.SelectedText;
+                bool entrance;
+                if (rbtnEntrance.Checked)
+                {
+                    entrance = true;
+                }
+                entrance = false;
+                string date_time = dateTimePicker1.Value.ToString();
+                double temperature = Convert.ToDouble(txtTemp.Text);
+                RegistryDAO.AddRegistry(idUser, entrance, date_time, temperature);
+            }
         }
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            string carnet = txtCarnet.Text;
+            int department = 0;
+            if (rbtnAdmin.Checked){
+                department = 1;
+            }else if (rbtnVigilant.Checked)
+            {
+                department = 2;
+            }else if (rbtnEmployee.Checked)
+            {
+                department = 3;
+            }
+
+            string name = txtName.Text;
+            string lastname = txtLastName.Text;
+            string dui = txtDui.Text;
+            string birthdate = dateTimePicker2.Value.ToShortDateString();
+            UserDAO.AddEmployee(carnet,department,name,lastname,dui,birthdate);
+            MessageBox.Show("Empleado agregado con exito, clave igual al nombre.");
         }
 
         private void btnDeleteEmployee_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            string eliminar = textBox1.Text;
+            
+            UserDAO.QuitEmpoloyee(eliminar);
+            MessageBox.Show("Empleado eliminado con exito");
         }
 
         private void picExit_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            Application.Exit();
         }
 
         private void picReload_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            refreshDataDelegate?.Invoke();
         }
     }
 }

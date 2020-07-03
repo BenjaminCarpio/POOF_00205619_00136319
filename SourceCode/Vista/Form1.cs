@@ -68,6 +68,7 @@ namespace SourceCode
                             MessageBox.Show("Bienvenido " + type + $" {user}");
                             this.Hide();
                             Menu m = new Menu();
+                            m.userID = username;
                             m.Show();
                         } else 
                             MessageBox.Show("Credenciales erroneas");

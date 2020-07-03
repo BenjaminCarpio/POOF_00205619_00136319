@@ -10,10 +10,10 @@ namespace SourceCode.Modelo
         public string name { get; set; }
         public string lastName { get; set; }
         public string dui { get; set; }
-        public DateTime birthDate { get; set; }
+        public string birthDate { get; set; }
 
         public User(){}
-        public User(string idUser, int idDepartment, string password, string name, string lastName, string dui, DateTime birthDate)
+        public User(string idUser, int idDepartment, string password, string name, string lastName, string dui, string birthDate)
         {
             this.idUser = idUser;
             this.idDepartment = idDepartment;

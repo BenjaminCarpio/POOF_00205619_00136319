@@ -89,7 +89,6 @@ namespace SourceCode
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.dtgEmployeeInWork = new System.Windows.Forms.DataGridView();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.dtgMostPeopleIn = new System.Windows.Forms.DataGridView();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.dtgTopTemps = new System.Windows.Forms.DataGridView();
             this.tabPage11 = new System.Windows.Forms.TabPage();
@@ -102,6 +101,9 @@ namespace SourceCode
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblEditarjeje = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabMenu.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -127,7 +129,6 @@ namespace SourceCode
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dtgEmployeeInWork)).BeginInit();
             this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dtgMostPeopleIn)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dtgTopTemps)).BeginInit();
             this.tabPage11.SuspendLayout();
@@ -138,6 +139,7 @@ namespace SourceCode
             ((System.ComponentModel.ISupportInitialize) (this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.picReload)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -247,10 +249,10 @@ namespace SourceCode
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(807, 485);
+            this.tabPage2.Size = new System.Drawing.Size(806, 486);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Registro de entrada";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -288,7 +290,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(801, 479);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(800, 480);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // label5
@@ -297,9 +299,9 @@ namespace SourceCode
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Forte", 27.75F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label5.Location = new System.Drawing.Point(363, 95);
+            this.label5.Location = new System.Drawing.Point(363, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(435, 95);
+            this.label5.Size = new System.Drawing.Size(434, 96);
             this.label5.TabIndex = 3;
             this.label5.Text = "Hora del registro";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -309,9 +311,9 @@ namespace SourceCode
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Forte", 27.75F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label4.Location = new System.Drawing.Point(3, 95);
+            this.label4.Location = new System.Drawing.Point(3, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(354, 95);
+            this.label4.Size = new System.Drawing.Size(354, 96);
             this.label4.TabIndex = 2;
             this.label4.Text = "Usuario";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -324,7 +326,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(795, 95);
+            this.label2.Size = new System.Drawing.Size(794, 96);
             this.label2.TabIndex = 1;
             this.label2.Text = "Registro";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -335,7 +337,7 @@ namespace SourceCode
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel4.SetColumnSpan(this.dateTimePicker1, 2);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(524, 226);
+            this.dateTimePicker1.Location = new System.Drawing.Point(524, 228);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(112, 23);
             this.dateTimePicker1.TabIndex = 0;
@@ -344,7 +346,7 @@ namespace SourceCode
             // 
             this.cmbRegistUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbRegistUser.FormattingEnabled = true;
-            this.cmbRegistUser.Location = new System.Drawing.Point(66, 226);
+            this.cmbRegistUser.Location = new System.Drawing.Point(66, 228);
             this.cmbRegistUser.Name = "cmbRegistUser";
             this.cmbRegistUser.Size = new System.Drawing.Size(228, 23);
             this.cmbRegistUser.TabIndex = 4;
@@ -357,10 +359,10 @@ namespace SourceCode
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Forte", 15.75F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 288);
+            this.groupBox1.Location = new System.Drawing.Point(3, 291);
             this.groupBox1.Name = "groupBox1";
             this.tableLayoutPanel4.SetRowSpan(this.groupBox1, 2);
-            this.groupBox1.Size = new System.Drawing.Size(354, 188);
+            this.groupBox1.Size = new System.Drawing.Size(354, 186);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo de registro";
@@ -370,10 +372,10 @@ namespace SourceCode
             this.rbtnNotEnter.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnNotEnter.Location = new System.Drawing.Point(30, 115);
+            this.rbtnNotEnter.Location = new System.Drawing.Point(30, 117);
             this.rbtnNotEnter.Name = "rbtnNotEnter";
             this.rbtnNotEnter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rbtnNotEnter.Size = new System.Drawing.Size(178, 72);
+            this.rbtnNotEnter.Size = new System.Drawing.Size(179, 72);
             this.rbtnNotEnter.TabIndex = 2;
             this.rbtnNotEnter.TabStop = true;
             this.rbtnNotEnter.Text = "Acceso denegado (Fiebre alta)";
@@ -384,10 +386,10 @@ namespace SourceCode
             this.rbtnExit.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnExit.Location = new System.Drawing.Point(30, 73);
+            this.rbtnExit.Location = new System.Drawing.Point(30, 74);
             this.rbtnExit.Name = "rbtnExit";
             this.rbtnExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rbtnExit.Size = new System.Drawing.Size(178, 54);
+            this.rbtnExit.Size = new System.Drawing.Size(179, 54);
             this.rbtnExit.TabIndex = 1;
             this.rbtnExit.TabStop = true;
             this.rbtnExit.Text = "Salida";
@@ -398,10 +400,10 @@ namespace SourceCode
             this.rbtnEntrance.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.rbtnEntrance.Location = new System.Drawing.Point(30, 29);
+            this.rbtnEntrance.Location = new System.Drawing.Point(30, 30);
             this.rbtnEntrance.Name = "rbtnEntrance";
             this.rbtnEntrance.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rbtnEntrance.Size = new System.Drawing.Size(178, 54);
+            this.rbtnEntrance.Size = new System.Drawing.Size(179, 54);
             this.rbtnEntrance.TabIndex = 0;
             this.rbtnEntrance.TabStop = true;
             this.rbtnEntrance.Text = "Entrada";
@@ -412,9 +414,9 @@ namespace SourceCode
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.Location = new System.Drawing.Point(363, 285);
+            this.label6.Location = new System.Drawing.Point(363, 288);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(233, 95);
+            this.label6.Size = new System.Drawing.Size(233, 96);
             this.label6.TabIndex = 6;
             this.label6.Text = "Temperatura:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -422,7 +424,7 @@ namespace SourceCode
             // txtTemp
             // 
             this.txtTemp.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTemp.Location = new System.Drawing.Point(617, 321);
+            this.txtTemp.Location = new System.Drawing.Point(616, 324);
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(166, 23);
             this.txtTemp.TabIndex = 7;
@@ -434,9 +436,9 @@ namespace SourceCode
             this.btnAddRegistry.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddRegistry.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnAddRegistry.Location = new System.Drawing.Point(363, 383);
+            this.btnAddRegistry.Location = new System.Drawing.Point(363, 387);
             this.btnAddRegistry.Name = "btnAddRegistry";
-            this.btnAddRegistry.Size = new System.Drawing.Size(435, 93);
+            this.btnAddRegistry.Size = new System.Drawing.Size(434, 90);
             this.btnAddRegistry.TabIndex = 8;
             this.btnAddRegistry.Text = "Realizar Registro";
             this.btnAddRegistry.UseVisualStyleBackColor = true;
@@ -445,9 +447,9 @@ namespace SourceCode
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(807, 485);
+            this.tabPage3.Size = new System.Drawing.Size(806, 486);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mantenimiento (Admin)";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -469,7 +471,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 483F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(807, 485);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(806, 486);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // tabMaintenance
@@ -480,7 +482,7 @@ namespace SourceCode
             this.tabMaintenance.Location = new System.Drawing.Point(3, 3);
             this.tabMaintenance.Name = "tabMaintenance";
             this.tabMaintenance.SelectedIndex = 0;
-            this.tabMaintenance.Size = new System.Drawing.Size(801, 479);
+            this.tabMaintenance.Size = new System.Drawing.Size(800, 480);
             this.tabMaintenance.TabIndex = 0;
             // 
             // tabPage5
@@ -489,7 +491,7 @@ namespace SourceCode
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(793, 451);
+            this.tabPage5.Size = new System.Drawing.Size(792, 452);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Agregar Empleado";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -530,13 +532,13 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(787, 445);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(786, 446);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // txtLastName
             // 
             this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLastName.Location = new System.Drawing.Point(571, 122);
+            this.txtLastName.Location = new System.Drawing.Point(570, 122);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(167, 23);
             this.txtLastName.TabIndex = 7;
@@ -556,7 +558,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label9.Location = new System.Drawing.Point(528, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(253, 85);
+            this.label9.Size = new System.Drawing.Size(252, 85);
             this.label9.TabIndex = 2;
             this.label9.Text = "Apellido";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -644,7 +646,7 @@ namespace SourceCode
             this.groupBox2.Location = new System.Drawing.Point(528, 182);
             this.groupBox2.Name = "groupBox2";
             this.tableLayoutPanel7.SetRowSpan(this.groupBox2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(253, 167);
+            this.groupBox2.Size = new System.Drawing.Size(252, 167);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cargo";
@@ -688,7 +690,7 @@ namespace SourceCode
             this.btnAddEmployee.ForeColor = System.Drawing.Color.LightCoral;
             this.btnAddEmployee.Location = new System.Drawing.Point(267, 358);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(514, 81);
+            this.btnAddEmployee.Size = new System.Drawing.Size(513, 82);
             this.btnAddEmployee.TabIndex = 12;
             this.btnAddEmployee.Text = "Agregar empleado";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
@@ -697,10 +699,10 @@ namespace SourceCode
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.tableLayoutPanel8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 24);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(793, 451);
+            this.tabPage6.Size = new System.Drawing.Size(791, 451);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Eliminar Empleado";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -730,7 +732,7 @@ namespace SourceCode
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel8.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(787, 445);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(785, 445);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // label12
@@ -740,7 +742,7 @@ namespace SourceCode
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(387, 148);
+            this.label12.Size = new System.Drawing.Size(386, 148);
             this.label12.TabIndex = 1;
             this.label12.Text = "Carnet de empleado a eliminar:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -750,9 +752,9 @@ namespace SourceCode
             this.btnDeleteEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDeleteEmployee.Font = new System.Drawing.Font("Forte", 26.25F);
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.LightCoral;
-            this.btnDeleteEmployee.Location = new System.Drawing.Point(396, 299);
+            this.btnDeleteEmployee.Location = new System.Drawing.Point(395, 299);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
-            this.btnDeleteEmployee.Size = new System.Drawing.Size(388, 143);
+            this.btnDeleteEmployee.Size = new System.Drawing.Size(387, 143);
             this.btnDeleteEmployee.TabIndex = 4;
             this.btnDeleteEmployee.Text = "Eliminar empleado";
             this.btnDeleteEmployee.UseVisualStyleBackColor = true;
@@ -761,7 +763,7 @@ namespace SourceCode
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(466, 62);
+            this.textBox1.Location = new System.Drawing.Point(464, 62);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 23);
             this.textBox1.TabIndex = 2;
@@ -774,7 +776,7 @@ namespace SourceCode
             this.dtgEmployeeR.Location = new System.Drawing.Point(3, 151);
             this.dtgEmployeeR.Name = "dtgEmployeeR";
             this.tableLayoutPanel8.SetRowSpan(this.dtgEmployeeR, 2);
-            this.dtgEmployeeR.Size = new System.Drawing.Size(387, 291);
+            this.dtgEmployeeR.Size = new System.Drawing.Size(386, 291);
             this.dtgEmployeeR.TabIndex = 0;
             // 
             // label13
@@ -782,9 +784,9 @@ namespace SourceCode
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label13.Location = new System.Drawing.Point(396, 148);
+            this.label13.Location = new System.Drawing.Point(395, 148);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(388, 148);
+            this.label13.Size = new System.Drawing.Size(387, 148);
             this.label13.TabIndex = 3;
             this.label13.Text = "<== Lista de empleados";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -857,10 +859,10 @@ namespace SourceCode
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.dtgEmployeeInWork);
-            this.tabPage8.Location = new System.Drawing.Point(4, 24);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(793, 451);
+            this.tabPage8.Size = new System.Drawing.Size(791, 451);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "Empleados dentro de la empresa";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -872,12 +874,12 @@ namespace SourceCode
             this.dtgEmployeeInWork.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgEmployeeInWork.Location = new System.Drawing.Point(3, 3);
             this.dtgEmployeeInWork.Name = "dtgEmployeeInWork";
-            this.dtgEmployeeInWork.Size = new System.Drawing.Size(787, 445);
+            this.dtgEmployeeInWork.Size = new System.Drawing.Size(785, 445);
             this.dtgEmployeeInWork.TabIndex = 1;
             // 
             // tabPage9
             // 
-            this.tabPage9.Controls.Add(this.dtgMostPeopleIn);
+            this.tabPage9.Controls.Add(this.tableLayoutPanel10);
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(793, 451);
@@ -885,22 +887,12 @@ namespace SourceCode
             this.tabPage9.Text = "Departamento mas concurrido";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // dtgMostPeopleIn
-            // 
-            this.dtgMostPeopleIn.ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgMostPeopleIn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgMostPeopleIn.Location = new System.Drawing.Point(0, 0);
-            this.dtgMostPeopleIn.Name = "dtgMostPeopleIn";
-            this.dtgMostPeopleIn.Size = new System.Drawing.Size(793, 451);
-            this.dtgMostPeopleIn.TabIndex = 2;
-            // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.dtgTopTemps);
-            this.tabPage10.Location = new System.Drawing.Point(4, 24);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(793, 451);
+            this.tabPage10.Size = new System.Drawing.Size(791, 451);
             this.tabPage10.TabIndex = 3;
             this.tabPage10.Text = "Temperaturas más altas (5)";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -912,15 +904,15 @@ namespace SourceCode
             this.dtgTopTemps.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgTopTemps.Location = new System.Drawing.Point(0, 0);
             this.dtgTopTemps.Name = "dtgTopTemps";
-            this.dtgTopTemps.Size = new System.Drawing.Size(793, 451);
+            this.dtgTopTemps.Size = new System.Drawing.Size(791, 451);
             this.dtgTopTemps.TabIndex = 2;
             // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.dtg60Plus);
-            this.tabPage11.Location = new System.Drawing.Point(4, 24);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(793, 451);
+            this.tabPage11.Size = new System.Drawing.Size(791, 451);
             this.tabPage11.TabIndex = 4;
             this.tabPage11.Text = "Empleados 60+ (Edad)";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -932,7 +924,7 @@ namespace SourceCode
             this.dtg60Plus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtg60Plus.Location = new System.Drawing.Point(0, 0);
             this.dtg60Plus.Name = "dtg60Plus";
-            this.dtg60Plus.Size = new System.Drawing.Size(793, 451);
+            this.dtg60Plus.Size = new System.Drawing.Size(791, 451);
             this.dtg60Plus.TabIndex = 2;
             // 
             // tableLayoutPanel9
@@ -1048,6 +1040,46 @@ namespace SourceCode
             this.dateTimePicker2.Size = new System.Drawing.Size(94, 20);
             this.dateTimePicker2.TabIndex = 0;
             // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 1;
+            this.tableLayoutPanel10.ColumnStyles.Add(
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.ColumnStyles.Add(
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.Controls.Add(this.lblEditarjeje, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.label14, 0, 0);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 2;
+            this.tableLayoutPanel10.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel10.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(793, 451);
+            this.tableLayoutPanel10.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Forte", 48F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label14.Location = new System.Drawing.Point(3, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(787, 180);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "El departamento más concurrido!!!!!";
+            // 
+            // lblEditarjeje
+            // 
+            this.lblEditarjeje.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblEditarjeje.Location = new System.Drawing.Point(3, 180);
+            this.lblEditarjeje.Name = "lblEditarjeje";
+            this.lblEditarjeje.Size = new System.Drawing.Size(787, 271);
+            this.lblEditarjeje.TabIndex = 1;
+            this.lblEditarjeje.Text = "null";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1084,7 +1116,6 @@ namespace SourceCode
             this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dtgEmployeeInWork)).EndInit();
             this.tabPage9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize) (this.dtgMostPeopleIn)).EndInit();
             this.tabPage10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dtgTopTemps)).EndInit();
             this.tabPage11.ResumeLayout(false);
@@ -1095,6 +1126,7 @@ namespace SourceCode
             ((System.ComponentModel.ISupportInitialize) (this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.picReload)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
@@ -1162,12 +1194,14 @@ namespace SourceCode
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.DataGridView dtg60Plus;
         private System.Windows.Forms.DataGridView dtgTopTemps;
-        private System.Windows.Forms.DataGridView dtgMostPeopleIn;
         private System.Windows.Forms.DataGridView dtgEmployeeInWork;
         private System.Windows.Forms.DataGridView dtgGeneralEmployee;
         private System.Windows.Forms.PictureBox picExit;
         private System.Windows.Forms.PictureBox picUserType;
         private System.Windows.Forms.PictureBox picJEJE;
         private System.Windows.Forms.PictureBox picReload;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblEditarjeje;
     }
 }
